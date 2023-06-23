@@ -1,0 +1,26 @@
+.cart-block {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .cart-block__icon {
+        cursor: pointer;
+        position: relative;
+
+        &.active {
+            color: #a2ed0c;
+            transform: scale(1.5) translateY(-5px);
+        }
+
+        &:hover {
+            color: #a2ed0c;
+            transform: scale(1.5) translateY(-5px);
+        }
+    }
+
+    .cart-block__total-price {
+        margin-left: 15px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

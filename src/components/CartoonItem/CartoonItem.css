@@ -1,0 +1,39 @@
+.cartoon-item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: space-between;
+  color: white;
+  width: 320px;
+  min-height: 300px;
+  background-color: #242529;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 15px;
+}
+.cartoon-item:not(:last-child) {
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
+.cartoon-item__details {
+  padding: 10px 20px;
+}
+.cartoon-item__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.cartoon-item__genre {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cartoon-item__description {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.cartoon-item__buy {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}

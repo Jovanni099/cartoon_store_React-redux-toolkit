@@ -1,0 +1,9 @@
+.cartoon-genre {
+  background-color: #505254;
+  padding: 2px 5px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+.cartoon-genre:not(:last-child) {
+  margin-right: 7px;
+}
