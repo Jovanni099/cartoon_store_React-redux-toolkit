@@ -11,10 +11,15 @@
   cursor: pointer;
   position: relative;
   padding-bottom: 15px;
+  transition: transform 700ms ease, width 700ms ease;
 }
 .cartoon-item:not(:last-child) {
   margin-bottom: 30px;
   margin-right: 50px;
+}
+.cartoon-item:hover {
+  transform: scale(1.1) translateY(-5px);
+  width: 350px;
 }
 .cartoon-item__details {
   padding: 10px 20px;
