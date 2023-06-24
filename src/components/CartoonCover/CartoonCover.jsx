@@ -1,7 +1,7 @@
 import React from 'react'
-import './GameCover.less'
+import './CartoonCover.less'
 
-export const GameCover = ({ image = "" }) => {
+export const CartoonCover = ({ image = "" }) => {
     return (
         // <div className='cartoon-cover'><img src={image} alt="" /></div>
         <div className='cartoon-cover' style={{ backgroundImage: `url(${image})` }} />

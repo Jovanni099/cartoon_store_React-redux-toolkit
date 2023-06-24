@@ -1,0 +1,14 @@
+.cartoon-page__content {
+  display: flex;
+}
+.cartoon-page__content .cartoon-page__left {
+  width: 70%;
+}
+.cartoon-page__content .cartoon-page__right {
+  width: 30%;
+}
+.cartoon-page__content .cartoon-page__right .cartoon-page__buy-cartoon {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}

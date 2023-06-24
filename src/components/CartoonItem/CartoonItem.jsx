@@ -1,13 +1,24 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router';
+import { setItemInCart } from '../../redux/cart/reducer';
+import { setCurrentCartoon } from '../../redux/cartoons/reducer';
 import { CartoonBuy } from '../CartoonBuy/CartoonBuy';
 import { CartoonGenre } from '../CartoonGenre/CartoonGenre';
-import { GameCover } from '../GameCover/GameCover';
+import { CartoonCover } from '../CartoonCover/CartoonCover';
 import './CartoonItem.less';
 
 export const CartoonItem = ({ cartoon }) => {
+
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const handleClick = () => {
+        dispatch(setCurrentCartoon(cartoon));
+        navigate(`/app/${cartoon.title}`, { replace: true })
+    }
     return (
-        <div className='cartoon-item'>
-            <GameCover image={cartoon.image} />
+        <div className='cartoon-item' onClick={handleClick}>
+            <CartoonCover image={cartoon.image} />
             <div className='cartoon-item__details'>
                 <span className='cartoon-item__title'>{cartoon.title}</span>
                 <div className='cartoon-item__genre'>
